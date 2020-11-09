@@ -25,7 +25,7 @@ font = pygame.font.SysFont("Arial", 30)
 
 
 mixer.music.load('BobLoop.mp3')
-mixer.music.play(1)
+mixer.music.play()
 
 
 def updateFPS():
