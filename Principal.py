@@ -20,10 +20,13 @@ clock = pygame.time.Clock()
 mainClock = pygame.time.Clock()
 font = pygame.font.SysFont("Arial", 30)
 
-mixer.music.load('BobIntro.mp3')
-mixer.music.play()
+#mixer.music.load('BobIntro.mp3')
+#mixer.music.play(1)
+
+
 mixer.music.load('BobLoop.mp3')
-mixer.music.play(-1)
+mixer.music.play(1)
+
 
 def updateFPS():
     fps = str(int(clock.get_fps()))
@@ -130,6 +133,8 @@ def niveles():
             if click:
                 Jugar(1)
                 screen.fill((0, 0, 0))
+
+
         elif btn2.collidepoint((mx, my)):
             pygame.draw.rect(screen, (255, 128, 128), btn2)
             escribir('Nivel 2', 25, (255, 255, 255), screen, 660, 305)
