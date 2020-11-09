@@ -3,19 +3,28 @@ from pygame.locals import *
 from pygame import mixer
 from RayCaster import *
 
+"""
+Universidad del Valle de Guatemala
+Graficas por computadora
+Principal
+Jorge Suchite 
+Carnet 15293
+08/11/2020
+Proyecto No. 3 Ray Casting
+"""
 pygame.init()
-pygame.display.set_caption('Juegazazazazo Inc.')
+pygame.display.set_caption(' Blizzard Inc.')
 screen = pygame.display.set_mode((1000, 500), pygame.DOUBLEBUF | pygame.HWACCEL)  # , pygame.FULLSCREEN)
 screen.set_alpha(None)
 clock = pygame.time.Clock()
 mainClock = pygame.time.Clock()
 font = pygame.font.SysFont("Arial", 30)
-"""
+
 mixer.music.load('BobIntro.mp3')
 mixer.music.play()
 mixer.music.load('BobLoop.mp3')
 mixer.music.play(-1)
-"""
+
 def updateFPS():
     fps = str(int(clock.get_fps()))
     fps = font.render(fps, 1, pygame.Color("white"))
